@@ -12,6 +12,8 @@
    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
    <link rel="icon" href="https://media-exp1.licdn.com/dms/image/C5603AQHn_YNG-XBHfg/profile-displayphoto-shrink_100_100/0/1629961718036?e=1635984000&v=beta&t=p4ZR2XUXLOoKgnDOFaa4rKvhA6gzJ6aeT6QEwSuKoeE" type="image/gif" sizes="16x16">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 </head>
 <body>
@@ -69,7 +71,7 @@
                </div>
             </div>
             <div class="col-md-6 p-5">
-               <form class="row g-3" action="form-handler.php" method="post">
+               <form class="row g-3" id="submit-form" action="" >
                   <div class="col-md-12">
                      <label for="inputName" class="form-label text-white">Name :</label>
                      <input type="text" class="form-control" name="name" placeholder="Full Name">
@@ -80,7 +82,7 @@
                    </div>
                    <div class="col-md-12">
                      <label for="text" class="form-label text-white" >Subject</label>
-                     <input type="text" class="form-control" name="Subject" placeholder="Phone Numbeer" >
+                     <input type="text" class="form-control" name="Subject" >
                    </div>
                    <div class="col-md12">
                      <label for="messageBox" class="form-label text-white"> Enter Your Messege Here :</label>
@@ -89,13 +91,13 @@
                    <div class="col-md-12">
                      <button type="submit" class="btn btn-primary form-control">Submit</button>
                    </div>
-               </form>
+               </form>cdcd
             </div>
             
          </div>
       </div>
    </section>
-
+<!---  google sheet : https://docs.google.com/spreadsheets/d/17uN3prpm7saByT43do7Q_2uMKmwC2gdXJqMtxdSmXHs/edit#gid=0 ----->
    <footer>
       <div class="foot">
          <p > © Farhan 2022 </p>
@@ -113,6 +115,24 @@
       {
          navlinks.style.right = "-200px"
       }
+
+      $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbxQuzgLQ9zzhobts6lLpMMo0JQ1UZH899cJ3XQQc_ksvy34ETRMlbB93fi_LBmkAIrasg/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
    </script>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
