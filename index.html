@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>FARHAN</title>
+   <link rel ="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/a6ce158673.js" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+<body>
+   <section class = "first">
+      <nav>
+         <a href="index.html" class="logoFarhan" >FARHAN</a>
+         <div class="nav-links" id="navLinks">  
+            <i class="fa fa-times" onclick="hideMenu()"></i>    
+            <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="about.html">ABOUT ME</a></li>
+               <li><a href="education.html">EDUCATION</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
+               
+            </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()" ></i>
+      </nav>
+
+      <div class="text-box">
+         <h1>farhan</h1>
+         <p>Hello ... <br> I'am a Computer Engineering Student in Polytechnic.</p>
+         <a href="https://www.instagram.com/__f_arhan/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+         <a href="https://www.linkedin.com/in/farhan-ilr-a2929621b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+         <a href="https://twitter.com/__f_arhan/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+         <a href="https://github.com/farhan-ilr"><i class="fa fa-github" aria-hidden="true"></i></a>
+         <div class="btn">
+            <a href="about.html" class="abBtn">About me</a>
+         </div>
+      </div>
+
+
+<script>
+   navlinks = document.getElementById("navLinks")
+
+   function showMenu()
+   {
+      navlinks.style.right = "0";
+   }
+   function hideMenu()
+   {
+      navlinks.style.right = "-200px"
+   }
+</script>
+</body>
+</html>

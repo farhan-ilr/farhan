@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About</title>
+   <link rel ="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/a6ce158673.js" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+<body onload="percent(65)">
+   <section class = "about">
+      <nav>
+         <a href="index.html" class="logoFarhan" >FARHAN</a>
+         <div class="nav-links" id="navLinks">  
+            <i class="fa fa-times" onclick="hideMenu()"></i>    
+            <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="about.html">ABOUT ME</a></li>
+               <li><a href="education.html">EDUCATION</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
+               
+            </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()" ></i>
+      </nav>
+      
+      <div class="text-box">
+         <h1>Aboute Me.</h1>
+         <p class="pAbout">Hello I'am Farhan. <br> I'am 20 years old. live in Malapuuram Kerala.<br> Now iam studying Computer Engineering in Polytechnic.</p>
+      </div>
+   </section>
+   <section class="my-skills container ">
+          
+      
+      <div class="row spec">
+         <h1 class="hedSkill"> About My Coding Skills</h1>
+         <div class=" col-md-4 sk">
+            <div class="skill">
+               <div class="outer">
+                  <div class="inner">
+                     <div id="number">
+                        <script>
+                           let number = document.getElementById("number");
+                           let counter = 0;
+                           setInterval(() => {
+                              if( counter == 65){
+                                 clearInterval();
+                              }else{
+                                 counter += 1;
+                                 number.innerHTML = counter + "% \n HTML & CSS";
+                                 }
+                                 }, 30);
+                        </script>        
+                     </div>
+                  </div>
+               </div>
+               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70" stroke-linecap="round" class="htmlCircle" />
+               </svg>
+            </div>
+         </div>
+
+
+         <div class="col-md-4 sk">
+            <div class="skill">
+               <div class="outer">
+                  <div class="inner">
+                     <div id="number1">
+                        <script>
+                           let number1 = document.getElementById("number1");
+                           let counter1 = 0;
+                           setInterval(() => {
+                              if( counter1 == 50){
+                                 clearInterval();
+                              }else{
+                                 counter1 += 1;
+                                 number1.innerHTML = counter1 + "% \t CPP";                   
+                                 }
+                                 }, 40);
+                        </script>        
+                     </div>
+                  </div>
+               </div>
+               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70" stroke-linecap="round" class="cpp" />
+               </svg>
+            </div>
+         </div>
+
+         <div class="col-md-4 sk">
+            <div class="skill">
+               <div class="outer">
+                  <div class="inner">
+                     <div id="number2">
+                        <script>
+                           let number2 = document.getElementById("number2");
+                           let counter2 = 0;
+                           setInterval(() => {
+                              if( counter2 == 70){
+                                 clearInterval();
+                              }else{
+                                 counter2 += 1;
+                                 number2.innerHTML = counter2 + "% \t java";                   
+                                 }
+                                 }, 30);
+                        </script>        
+                     </div>
+                  </div>
+               </div>
+               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70" stroke-linecap="round" class="java" />
+               </svg>
+            </div>
+         </div>
+
+         <div class="col-md-4 sk">
+            <div class="skill">
+               <div class="outer">
+                  <div class="inner">
+                     <div id="number3">
+                        <script>
+                           let number3 = document.getElementById("number3");
+                           let counter3 = 0;
+                           setInterval(() => {
+                              if( counter3 == 50){
+                                 clearInterval();
+                              }else{
+                                 counter3 += 1;
+                                 number3.innerHTML = counter3 + "% \t C";                   
+                                 }
+                                 }, 30);
+                        </script>        
+                     </div>
+                  </div>
+               </div>
+               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70" stroke-linecap="round" class="clanguage" />
+               </svg>
+            </div>
+         </div>
+
+         
+
+
+
+
+      </div>
+
+   </section>
+
+
+   <footer>
+      <div class="foot">
+         <p > © Farhan 2022 </p>
+      </div>
+   </footer>
+
+   <script>
+      navlinks = document.getElementById("navLinks")
+   
+      function showMenu()
+      {
+         navlinks.style.right = "0";
+      }
+      function hideMenu()
+      {
+         navlinks.style.right = "-200px"
+      }
+
+
+   </script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+
+   
+</body>
+</html>

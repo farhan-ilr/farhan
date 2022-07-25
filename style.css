@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@1,300&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.first{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(20211211_220206.jpg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+nav{
+   display: flex;
+   padding: 2% 6%;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+.logoFarhan{
+   font-size:175%;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-decoration: none;
+   color: aliceblue;
+   
+}
+.nav-links
+{
+   flex: 1;
+   text-align: right;
+
+}
+.nav-links ul li{
+   list-style:none;
+   display: inline-block;
+   padding: 8px 12px;
+   
+}
+.nav-links ul li a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 13px;
+   font-family: 'Poppins', sans-serif;
+
+}
+.nav-links ul li::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background: #f44336;
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+   width: 100%;
+
+}
+.text-box{
+   width: 90%;
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.text-box h1{
+   font-size: 30px;
+   font-family: playfair display,serif;
+
+}
+.text-box p{
+   margin: 10px 0 40px;
+   font-size: 14px;
+   color: #fff;
+}
+nav .fa{
+   display: none;
+}
+.text-box a{
+   text-decoration: none;
+   color: white;
+   transition: 0.4s;
+   margin: 10px;
+}
+.text-box a:hover{
+   color: black;
+}
+.about{
+   min-height: 80vh;
+   width: 100%;
+   background-color: #726b6b;
+   background:linear-gradient(#bdc3c7, #2c3e50);
+   position: relative;
+}
+.about h1{
+   margin-top: 50px;
+   color: #3f5689;
+}
+.about p{
+   color: #151212;
+   font-family: georgia,palatino,book antiqua,palatino linotype,serif;
+   font-weight: 500;
+
+}
+.pAbout{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 450;
+}
+.education{
+   background:#A0AECD;
+   min-height: 100vh;
+   width: 100%;
+   position: relative;
+}
+
+.link{
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   
+
+}
+.link:hover{
+   color: rgb(0, 0, 0);
+   font-weight: 500;
+}
+
+.container{
+   height: 131vh;
+}
+.edHeight{
+   height: 100vh;
+   background: linear-gradient(#141e30,#243b55);
+}
+.edHeight div h5,p{
+   color: white;
+}
+@media(max-width:700px){
+   .text-box h1{
+      font-size: 25px;
+      font-family: 'Poppins', sans-serif; 
+   }
+   .nav-links ul li{
+      display: block;
+   }
+   .nav-links{
+      position: fixed;
+      background:BLACK;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      font-style:normal;  
+      transition: 0.5s;
+   }
+   nav .fa{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+   }
+   .nav-links ul {
+      padding: 30px;
+   }
+   .edHeight{
+      height: 100%;
+   }
+}
+.abBtn{
+   text-decoration: none;
+   color: white;
+   padding:10px 20px;
+   border: 1px solid;
+   display: inline-block;
+   background: transparent;
+   position: relative;
+   cursor: pointer;
+   font-size: 13px;
+   transition: 0.5s;
+  
+}
+.abBtn:hover{
+   border: 1px solid black;
+   background: rgb(241, 237, 237);
+   
+}
+.btn{
+   
+   text-align: center;
+   margin-top: 30px;
+}
+.cont{
+   background:black;
+   width: 100%;
+   position: relative;
+   height: 100%;
+
+}
+.marg{
+   margin-top: 15px;
+   margin-left: 50px;
+}
+.icon{
+   text-align: center;
+}
+.icon a{
+   text-decoration: none;
+   color: white;
+   transition: 0.4s;
+   margin: 10px;
+}
+.location{
+   width: 80%;
+   margin: auto;
+}
+ .location iframe{
+   width: 100%;
+   height: 35%;
+ }
+ .contact-us{
+   width: 80%;
+   margin: auto;
+ }
+ .contact-col{
+   flex-basis: 48%;
+   margin-bottom: 30px;
+ }
+ .contact-col div{
+   display: flex;
+   align-items: center;
+   margin-bottom: 49px;
+ }
+ .contact-col span{
+   margin-left: 10%;
+ }
+ .contact-col div .fa{
+   font-size: 20px;
+   margin: 10px;
+   color: rgb(67, 70, 158);
+ }
+ .contact-col div h5{
+   font-size: 20px;
+   margin-bottom: 5px;
+   font-weight: 400;
+ }
+ .contact-col div p{
+   font-size: 15px;
+   font-weight: 50;
+ }
+ @media(max-width:700px){
+   .contact-col span{
+      margin-left: 5%;
+    }
+    .contact-col div .fa{
+      font-size: 20px;
+      margin: 5px;
+      color: rgb(67, 70, 158);
+    }
+    .contact-col div h5{
+      font-size: 14px;
+      margin-bottom: 5px;
+      font-weight: 400;
+    }
+    .contact-col div p{
+      font-size: 11px;
+    } 
+ }
+ .my-skills{
+   width: 90%;
+   height: 100vh;
+   background: #e3edf7;
+   display: flex;
+ }
+ 
+.skill{
+   width: 160px;
+   height: 160px;
+   position: relative;
+   margin-top: 15px;
+   margin-left: 15px;
+   margin-right: 100px;
+}
+.outer{
+   height: 160px;
+   width: 160px;
+   border-radius: 50%;
+   padding: 20px;
+   box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+               -6px -6px 10px -1px rgba(255,255,255,0.7)   
+}
+.inner{
+   height: 120px;
+   width: 120px;
+   border-radius: 50%;
+   font-family: 'Poppins',sans-serif;
+   font-weight: 600;
+   color: #555;
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+               inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+               -0.5px -0.5px 0px rgba(255,255,255,1),
+               0.5px 0.5px 0px rgba(0,0,0,0.15),
+               0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+circle{
+   fill: none;
+   stroke:url(#GradientColor);
+   stroke-width: 20px;
+   stroke-dasharray: 472;
+   stroke-dashoffset: 472;  
+}
+svg{
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.spec{
+   padding-left: 10%;
+   text-align: center;
+    
+}
+.hedSkill{
+   font-size: 30px;
+   font-family: 'Poppins', sans-serif;
+   margin-left: -5%;
+   color: #3f5689;
+   margin-bottom: 30px;
+   padding-top: 7%;
+
+}
+.htmlCircle{
+   animation:  htmlC 2s linear forwards;  
+}
+.cpp{
+   animation: cppC 2s linear forwards;
+}
+.java{
+   animation: javaC 2s linear forwards;
+}
+.clanguage{
+   animation: cC 2s linear forwards;
+}
+.foot{
+   color: black;
+   text-align: center;
+   padding-top: 1%;
+
+}
+.foot p{
+   font-size: 10px;
+   color: black;
+}
+@keyframes htmlC {
+   100%{
+      stroke-dashoffset: 165;
+   } 
+}
+@keyframes cppC {
+   100%{
+      stroke-dashoffset: 236;
+   } 
+}
+@keyframes javaC {
+   100%{
+      stroke-dashoffset: 141.6;
+   } 
+}
+@keyframes cC {
+   100%{
+      stroke-dashoffset: 236;
+   } 
+}
+@media (max-width:800px) 
+{
+   .my-skills{
+      width: 100%;
+      height: 250vh;
+      background: #e3edf7;
+      display: block;
+      align-items: center;
+      justify-content: center;
+   }
+   .skill{
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      margin-top: 15px;
+      margin-left: 25%;  
+   }
+   .sk{
+    height: 200px;  
+   }
+   .spec{
+      padding: 0%;
+      text-align: center;
+   }  
+   .hedSkill{
+      font-size: 24px;
+      font-family: 'Poppins', sans-serif;
+      margin-left: 1%;
+      padding-top: 7%;
+
+   }
+   .about p{
+      font-family: georgia,palatino,book antiqua,palatino linotype,serif;
+      font-size: 10px;
+   }
+   .about{
+      height: 100vh;
+   }
+}
